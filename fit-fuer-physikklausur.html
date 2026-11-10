@@ -2,82 +2,202 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> <title>Bin ich fit für die Klausur? - Schwingungen und Wellen</title> <style> :root{--bg:#f7f7f5;--card:#fff;--tx:#1c1c1a;--mu:#6b6b66;--bd:#dcdcd6;--ас:#2a5bd7;--оk:#1f8a4c;--оkbg:#e3f4ea;--nо:#c0392b;—-nobg:#fbe8e5;—-wa:#b7791f;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,Opx);padding-bottom:env(safe-area-inset-bottom,Opx)} @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171716;--card:#232322;--tx:#ecece8;--ти:#а3а39с;--bd:#За3а37;--ас:#7aa2ff;--
-ok:#5fd08d;--okbg:#17301f;--no:#ff8d7f;--nobg:#3a1d19;--wa:#e8b04e}}
-: root[data-theme="dark"K--bg:#171716;--card:#232322;--tx:#ecece8;--mu:#a3a39c;--bd:#3a3a37;--a:#7aa2ff;--ok:#5fd08d;--0kbg:#17301f;--no:#ff8d7t;--
-nobg:#3a1d19;--wa:#e8b04e}
-htmi{scroll-padding-top:env(safe-area-inset-top,Opx)}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui, -apple-system, "Segoe Ul", Roboto, sans-serif} main{max-width:640px;margin:0 auto;padding:16px}
-hi{font-size:1.3rem;margin:.2em 0}
-.sub{color:var(--mu);font-size:.9rem;margin-bottom:12px}
-card{background:var(--card);border:1px solid var(--bd); border-radius: 14px;padding:16px;margin:12px0}
-barfheight:6px;background:var(--bd);border-radius:3px;overflow:hidden}
-.bar>i{display:block;height:100%;background:var(--ac);transition:width.3s}
-tagkfont-size: 75rem;color:var(--mu);text-transform:uppercase;letter-spacing: 04em} a{font-size:1.05rem;margin:6px 012px}
-button{font:inherit;color:inherit}
-.opt{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding: 12px;margin:8px 0;cursor:pointer}
-.opt.ok{background:var(--0kbg);border-color:var(--ok)}
-.opt.no{background:var(--nobg);border-color:var(--no)}
-fb{margin-top:10px;font-size: 95rem}
-.btn{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:12px18px;cursor:pointer;margin-top:12px}
-@media (prefers-color-scheme:dark){.btn{color:#111}}
-.row{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:10px} pill font-size: 8rem;padding:2px10px;border-radius:99px;border:1px solid currentColor;white-space:nowrap} .g{color:var(--ok)}.yicolor:var(--wa)} rcolor:var(--no)}
-tip{color:var(--mu);font-size:.grem;margin:2px 010px}
-</style> </head>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bin ich fit für die Klausur? - Schwingungen und Wellen</title>
+<style>
+:root {
+  --bg: #f7f7f5;
+  --card: #fff;
+  --tx: #1c1c1a;
+  --mu: #6b6b66;
+  --bd: #dcdcd6;
+  --ac: #2a5bd7;
+  --ok: #1f8a4c;
+  --okbg: #e3f4ea;
+  --no: #c0392b;
+  --nobg: #fbe8e5;
+  --wa: #b7791f;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171716;
+    --card: #232322;
+    --tx: #ecece8;
+    --mu: #a3a39c;
+    --bd: #3a3a37;
+    --ac: #7aa2ff;
+    --ok: #5fd08d;
+    --okbg: #17301f;
+    --no: #ff8d7f;
+    --nobg: #3a1d19;
+    --wa: #e8b04e;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171716;
+  --card: #232322;
+  --tx: #ecece8;
+  --mu: #a3a39c;
+  --bd: #3a3a37;
+  --ac: #7aa2ff;
+  --ok: #5fd08d;
+  --okbg: #17301f;
+  --no: #ff8d7f;
+  --nobg: #3a1d19;
+  --wa: #e8b04e;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { margin: 0; background: var(--bg); color: var(--tx); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.3rem; margin: .2em 0; }
+.sub { color: var(--mu); font-size: .9rem; margin-bottom: 12px; }
+.card { background: var(--card); border: 1px solid var(--bd); border-radius: 14px; padding: 16px; margin: 12px 0; }
+.bar { height: 6px; background: var(--bd); border-radius: 3px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--ac); transition: width .3s; }
+.tag { font-size: .75rem; color: var(--mu); text-transform: uppercase; letter-spacing: .04em; }
+a { font-size: 1.05rem; margin: 6px 0 12px; }
+button { font: inherit; color: inherit; }
+.opt { display: block; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--bd); border-radius: 10px; padding: 12px; margin: 8px 0; cursor: pointer; }
+.opt.ok { background: var(--okbg); border-color: var(--ok); }
+.opt.no { background: var(--nobg); border-color: var(--no); }
+.fb { margin-top: 10px; font-size: .95rem; }
+.btn { background: var(--ac); color: #fff; border: 0; border-radius: 10px; padding: 12px 18px; cursor: pointer; margin-top: 12px; }
+@media (prefers-color-scheme: dark) { .btn { color: #111; } }
+.row { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin-top: 10px; }
+.pill { font-size: .8rem; padding: 2px 10px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; }
+.g { color: var(--ok); }
+.y { color: var(--wa); }
+.r { color: var(--no); }
+.tip { color: var(--mu); font-size: .9rem; margin: 2px 0 10px; }
+</style>
+</head>
 <body>
 <main id="app"></main>
-<script> const Q=l
-{t:"Grundgrößen", q:"Ein Pendel führt in 20 s genau 40 vollständige Schwingungen aus. Wie groß ist die Frequenz?",o:["0,5 Hz","2 Hz","20 Hz","0,5 s"], a:1,e:"f = N/t =
-40/20 s = 2 Hz. Die Periodendauer wäre T = 1/f= 0,5 s."),
-{t:"Grundgrößen", q:"Ein Oszillator hat die Periodendauer T = 0,5 s. Wie groß ist die Kreisfrequenz w?",o:["2 s'",'4T s' = 12,6 s
-п/2 s'''"0,5 s-'"], а: 1,е:"w = 2п/Т =
-211/0,5 s = 4пs" s"= 12,6 s!"},
-{t: "Pendel & Energie",q:"Wo hat ein harmonisch schwingendes Federpendel die größte Geschwindigkeit?",o:["In den Umkehrpunkten","In der Gleichgewichtslage", "Bei maximaler Auslenkung","Dort, wo die Beschleunigung maximal ist"], a:1,e:"In der Gleichgewichtslage ist die Rückstellkraft null, die Geschwindigkeit aber maximal. In
-den Umkehrpunkten ist v = 0, die Beschleunigung maximal."},
-{t: "Pendel & Energie",q:"Die Masse eines Federpendels wird vervierfacht (gleiche Feder). Was passiert mit der Periodendauer?",o:["Sie bleibt gleich'
-"Sie verdoppelt
-sich",'Sie vervierfacht sich" 'Sie halbiert sich"], a:1,e:"T = 2п. /(m/D), also T~ Vm. Vierfache Masse ergibt doppelte Periodendauer."', {t: "Pendel & Energie", 9:"Ein Fadenpendel wird auf den Mond gebracht (g ist dort etwa 1/6 des Wertes auf der Erde). Wie ändert sich T?", ,o:["Unverändert" "6-mal so
-groß","Etwa 2,4-mal so groß","6-mal so klein"],a:2,e:"Т = 2п. (l/g), also T ~ 1/Vg. Bei g/6 wird T um den Faktor V
-6 = 2,4 größer."),
-{t: "Pendel & Energie", 9:"Welche Aussage zur Energie eines reibungsfreien, horizontal schwingenden Federpendels ist richtig?",o:["Die Gesamtenergie ist in der Gleichgewichtslage am größten.",'In den Umkehrpunkten ist die Energie vollständig Spannenergie; die Gesamtenergie bleibt konstant.""Die kinetische Energie ist während der Schwingung konstant."'Die Spannenergie ist in der Gleichgewichtslage maximal.'], a: 1,e:"Ohne Reibung bleibt E_ges = E_kin + E_Spann konstant. In den
-Umkehrpunkten ist E_kin = 0, in der Gleichgewichtslage ist E_Spann = 0. Beim vertikalen Federpendel kommt die
-_ageenergie dazu: Im oberen Umkehrpunkt ist sie
-maximal, die Spannenergie dort klein. Konstant bleibt dann die Summe aus E_kin, E_Spann und E_Lage."}, {t: "Resonanz",q:"Ein Pendel hat die Eigenfrequenz 2,0 Hz und wird periodisch angeregt. Bei welcher Erregerfrequenz ist die Amplitude am größten?",o:
-1.0
-HZ","2,0 Hz","4,0 HZ"],a:2,e:"Resonanz: Erregerfrequenz = Eigenfrequenz. Dann wird dem System besonders effektiv Energie zugeführt."), {t:"Wellen", 9:"Ein Ton mit f = 440 Hz breitet sich in Luft mit c = 340 m/s aus. Welche Wellenlänge hat er?",o: ["0,77 m"''1,29 m",'7,7 m","149 600 m"], a: O,e:"с = a.f, also 1 = c/f = 340 m/s ÷ 440 Hz = 0,77 m."),
-{t:"Wellen", q:"Welche Aussage über Wellen ist richtig?",o:["Schall in Luft ist eine Transversalwelle.","Bei einer Seilwelle schwingt das Seil quer zur Ausbreitungsrichtung (transversal); Schall in Luft ist longitudinal.",'Die Teilchen werden von der Welle über große Strecken mitgetragen.","Longitudinalwellen lassen sich polarisieren."], a:1,e:"Wellen transportieren Energie und Impuls, aber keine Materie. Nur Transversalwellen sind polarisierbar."}, {t:"Interferenz & stehende Wellen",q: "Zwei gleichphasig schwingende Erreger senden Kreiswellen aus. In einem Punkt P beträgt der Gangunterschied As. Wann kommt es in P zur Auslöschung?", o:["As = 1","As = 21"'"As = 1,5-1""As = 0"],a:2,e:"Destruktive Interferenz bei As = (2K+1)-1/2, hier also 0,51, 1,51, 2,51 ... Bei As = K-1 verstärken sich die Wellen."),
-{t:"Interferenz & stehende Wellen",q:"Ein Seil der Länge L = 1,2 m ist an beiden Enden fest eingespannt. Welche Wellenlänge hat die Grundschwingung der stehenden Welle?",o:["0,6 m",'1,2 m","2,4 m","4,8 m"], a:2, e:"Bei der Grundschwingung passt eine halbe Wellenlänge auf das Seil: L = N/2, also 1 = 2L = 2,4 m."} const TIPS={"Grundgrößen":"Wiederhole die Zusammenhänge f = 1/T und w = 2m/T und übe das Umrechnen.','Pendel & Energie":"Wiederhole die Formeln für T bei Feder- und Fadenpendel sowie den Energieaustausch zwischen E_kin und E_pot.","Resonanz":"Wiederhole, was Eigenfrequenz und Erregerfrequenz bedeuten und warum bei Resonanz die Amplitude besonders groß wird." "Wellen": "Ube c = ^.f in verschiedenen Situationen und die Unterschiede zwischen transversal und longitudinal.","Interferenz & stehende Wellen": "Ube Gangunterschiede (As = K.1 bzw. (2k+1) 1/2) und Skizzen stehender Wellen mit Knoten und Bäuchen.");
-const app=document.getElementByld("app");
-let i=0,ans=1];
-function esc(s) {return String(s).replace (/&/g,"&amp;") replace (/</g,"&lt;")} function start() {i=0;ans=[];show()}
+<script>
+const Q = [
+  {t: "Grundgrößen", q: "Ein Pendel führt in 20 s genau 40 vollständige Schwingungen aus. Wie groß ist die Frequenz?", o: ["0,5 Hz", "2 Hz", "20 Hz", "0,5 s"], a: 1, e: "f = N/t = 40/20 s = 2 Hz. Die Periodendauer wäre T = 1/f = 0,5 s."},
+  {t: "Grundgrößen", q: "Ein Oszillator hat die Periodendauer T = 0,5 s. Wie groß ist die Kreisfrequenz \u03c9?", o: ["2 s\u207b\u00b9", "4\u03c0 s\u207b\u00b9", "\u03c0/2 s\u207b\u00b9", "0,5 s\u207b\u00b9"], a: 1, e: "\u03c9 = 2\u03c0/T = 2\u03c0/0,5 s = 4\u03c0 s\u207b\u00b9 \u2248 12,6 s\u207b\u00b9."},
+  {t: "Pendel & Energie", q: "Wo hat ein harmonisch schwingendes Federpendel die größte Geschwindigkeit?", o: ["In den Umkehrpunkten", "In der Gleichgewichtslage", "Bei maximaler Auslenkung", "Dort, wo die Beschleunigung maximal ist"], a: 1, e: "In der Gleichgewichtslage ist die Rückstellkraft null, die Geschwindigkeit aber maximal. In den Umkehrpunkten ist v = 0, die Beschleunigung maximal."},
+  {t: "Pendel & Energie", q: "Die Masse eines Federpendels wird vervierfacht (gleiche Feder). Was passiert mit der Periodendauer?", o: ["Sie bleibt gleich", "Sie verdoppelt sich", "Sie vervierfacht sich", "Sie halbiert sich"], a: 1, e: "T = 2\u03c0\u221a(m/D), also T ~ \u221am. Vierfache Masse ergibt doppelte Periodendauer."},
+  {t: "Pendel & Energie", q: "Ein Fadenpendel wird auf den Mond gebracht (g ist dort etwa 1/6 des Wertes auf der Erde). Wie ändert sich T?", o: ["Unverändert", "6-mal so groß", "Etwa 2,4-mal so groß", "6-mal so klein"], a: 2, e: "T = 2\u03c0\u221a(l/g), also T ~ 1/\u221ag. Bei g/6 wird T um den Faktor \u221a6 \u2248 2,4 größer."},
+  {t: "Pendel & Energie", q: "Welche Aussage zur Energie eines reibungsfreien, horizontal schwingenden Federpendels ist richtig?", o: ["Die Gesamtenergie ist in der Gleichgewichtslage am größten.", "In den Umkehrpunkten ist die Energie vollständig Spannenergie; die Gesamtenergie bleibt konstant.", "Die kinetische Energie ist während der Schwingung konstant.", "Die Spannenergie ist in der Gleichgewichtslage maximal."], a: 1, e: "Ohne Reibung bleibt E_ges = E_kin + E_Spann konstant. In den Umkehrpunkten ist E_kin = 0, in der Gleichgewichtslage ist E_Spann = 0."},
+  {t: "Resonanz", q: "Ein Pendel hat die Eigenfrequenz 2,0 Hz und wird periodisch angeregt. Bei welcher Erregerfrequenz ist die Amplitude am größten?", o: ["1,0 Hz", "2,0 Hz", "4,0 Hz"], a: 1, e: "Resonanz: Erregerfrequenz = Eigenfrequenz. Dann wird dem System besonders effektiv Energie zugeführt."},
+  {t: "Wellen", q: "Ein Ton mit f = 440 Hz breitet sich in Luft mit c = 340 m/s aus. Welche Wellenlänge hat er?", o: ["0,77 m", "1,29 m", "7,7 m", "149 600 m"], a: 0, e: "c = \u03bb\u00b7f, also \u03bb = c/f = 340 m/s \u00f7 440 Hz = 0,77 m."},
+  {t: "Wellen", q: "Welche Aussage über Wellen ist richtig?", o: ["Schall in Luft ist eine Transversalwelle.", "Bei einer Seilwelle schwingt das Seil quer zur Ausbreitungsrichtung (transversal); Schall in Luft ist longitudinal.", "Die Teilchen werden von der Welle über große Strecken mitgetragen.", "Longitudinalwellen lassen sich polarisieren."], a: 1, e: "Wellen transportieren Energie und Impuls, aber keine Materie. Nur Transversalwellen sind polarisierbar."},
+  {t: "Interferenz & stehende Wellen", q: "Zwei gleichphasig schwingende Erreger senden Kreiswellen aus. In einem Punkt P beträgt der Gangunterschied \u0394s. Wann kommt es in P zur Auslöschung?", o: ["\u0394s = \u03bb", "\u0394s = 2\u03bb", "\u0394s = 1,5\u03bb", "\u0394s = 0"], a: 2, e: "Destruktive Interferenz bei \u0394s = (2k+1)\u00b7\u03bb/2, hier also 0,5\u03bb, 1,5\u03bb, 2,5\u03bb... Bei \u0394s = k\u00b7\u03bb verstärken sich die Wellen."},
+  {t: "Interferenz & stehende Wellen", q: "Ein Seil der Länge L = 1,2 m ist an beiden Enden fest eingespannt. Welche Wellenlänge hat die Grundschwingung der stehenden Welle?", o: ["0,6 m", "1,2 m", "2,4 m", "4,8 m"], a: 2, e: "Bei der Grundschwingung passt eine halbe Wellenlänge auf das Seil: L = \u03bb/2, also \u03bb = 2L = 2,4 m."}
+];
+
+const TIPS = {
+  "Grundgrößen": "Wiederhole die Zusammenhänge f = 1/T und \u03c9 = 2\u03c0/T und übe das Umrechnen.",
+  "Pendel & Energie": "Wiederhole die Formeln für T bei Feder- und Fadenpendel sowie den Energieaustausch zwischen E_kin und E_pot.",
+  "Resonanz": "Wiederhole, was Eigenfrequenz und Erregerfrequenz bedeuten und warum bei Resonanz die Amplitude besonders groß wird.",
+  "Wellen": "Übe c = \u03bb\u00b7f in verschiedenen Situationen und die Unterschiede zwischen transversal und longitudinal.",
+  "Interferenz & stehende Wellen": "Übe Gangunterschiede (\u0394s = k\u00b7\u03bb bzw. (2k+1)\u00b7\u03bb/2) und Skizzen stehender Wellen mit Knoten und Bäuchen."
+};
+
+const app = document.getElementById("app");
+let i = 0, ans = [];
+
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+}
+
+function start() {
+  i = 0;
+  ans = [];
+  show();
+}
+
 function show() {
-const d=QI;
-app.innerHTML= <h1> Bin ich fit für die Klausur?</h1><div class="sub"> Mechanische Schwingungen und Wellen • Q1</div>
-<div class="bar"><i style="width:${i/Q.length*100}%"></i></div>
-<div class="card"><div class="tag">Frage ${i+1} von ${Q.length} • ${d.t}</div><div class="q">${esc(d.a)}</div> <div id="opts"></div><div id="fb" class="fb"><|
-div><div id="nx"></div></div> const box=document.getElementByld("opts");
-  d.o.forEach((o,k)=>{const b=document.createElement("button");b.className="opt";b.textContent=0;b.onclick=()=>pick(k);box.appendChild(b)});
+  const d = Q[i];
+  app.innerHTML = `
+    <h1>Bin ich fit für die Klausur?</h1>
+    <div class="sub">Mechanische Schwingungen und Wellen &bull; Q1</div>
+    <div class="bar"><i style="width:${(i / Q.length) * 100}%"></i></div>
+    <div class="card">
+      <div class="tag">Frage ${i + 1} von ${Q.length} &bull; ${d.t}</div>
+      <div class="q" style="margin-top:8px;font-weight:600;">${esc(d.q)}</div>
+      <div id="opts" style="margin-top:12px;"></div>
+      <div id="fb" class="fb"></div>
+      <div id="nx"></div>
+    </div>
+  `;
+  const box = document.getElementById("opts");
+  d.o.forEach((o, k) => {
+    const b = document.createElement("button");
+    b.className = "opt";
+    b.textContent = o;
+    b.onclick = () => pick(k);
+    box.appendChild(b);
+  });
 }
-function pick (k) {
-const d=Q[i];ans[i]=k;
-[..document.querySelectorAlI(".opt")].forEach((b,j)=>{b.disabled=true;if(j===d.a)b.classList.add("ok");else if(j===k)b.classList.add("no")});
-document.getElementByld("fb").innerHTML=(k===d.a?"',
-Richtig. ":" X Leider nicht. ") +esc(d.e);
-const last=i===Q.length-1;
-document.getElementByld('nx").innerHTML= <button class="btn" id="go">${last?"Auswertung anzeigen":"Weiter"}</button»';
-document.getElementByld("go"). onclick=()=> {if(last)result(); else{i++; show ()}};
+
+function pick(k) {
+  const d = Q[i];
+  ans[i] = k;
+  [...document.querySelectorAll(".opt")].forEach((b, j) => {
+    b.disabled = true;
+    if (j === d.a) b.classList.add("ok");
+    else if (j === k) b.classList.add("no");
+  });
+  document.getElementById("fb").innerHTML = (k === d.a ? "<b>Richtig.</b> " : "<b>Leider nicht.</b> ") + esc(d.e);
+  const last = i === Q.length - 1;
+  document.getElementById("nx").innerHTML = `<button class="btn" id="go">${last ? "Auswertung anzeigen" : "Weiter"}</button>`;
+  document.getElementById("go").onclick = () => {
+    if (last) result();
+    else { i++; show(); }
+  };
 }
-function result(){
-const topics=0;Q.forEach((d,j)=>{const t=topics[d.t]=topics[d.tJ|kr:0,n:O};t.n++;if(ans[j]===d.a)t.rt+});
-const tot=ans.filter ((a,j)=>a===Q[].a).length;
-const p=tot/Q.length;
-const verdict=p>=0.85?["Du bist fit für die Klausur! *","Halte dein Wissen mit ein paar Aufgaben aus dem Lehrbuch frisch."]:p>=0.6?["Du bist auf einem guten Weg.",'Schau dir die gelb und rot markierten Themen noch einmal gezielt an."]:["Es gibt noch Lücken, aber noch ist Zeit.",'Arbeite die rot markierten Themen mit Heft und Lehrbuch auf und mache den Test danach erneut."];
-let rows="".
-for(const [n,t] of Object.entries(topics)){const q=t.r/t.n;const c=q===1?"g":q>=0.5?"y":"r"; const |=q===1?"sicher":q>=0.5?"wackelig": "Lücke"; rowst='<div class="row"><b>${n}</b><span class="pill${C}">${t.r}/${tn} •${1}</span></div>${9<1?^<div class="tip">${TIPS[n]}</div»*:""Ý app.innerHTML= <h1>Deine Auswertung</h1><div class="bar"><i style="width: 100%"> </i></div> <div class="card"><div class="tag">Gesamtergebnis</div><div class="q"><b>${tot} von ${Q.length}</b> richtig (${Math.round(p*100)} %)</div><div><b>$ {verdict[0]}</b><br>${verdict[1]}</div></div>
-<div class="card"><div class="tag"> Nach Themen</div>${rows}</div> <div class="card"><div class="tag">Selbstcheck: Kann ich ...</div>
-< div class="fb">• eine Schwingung mit y(t), T, f und w beschreiben?<br>• T für Feder- und Fadenpendel berechnen und begründen?<br>• Energieumwandlungen im Schwingungsverlauf erklären?<br>• Resonanz mit Eigen- und Erregerfrequenz erklären?<br>• mit c = ^.f rechnen und Wellenarten unterscheiden?<br>•
-Interferenz und stehende Wellen über Gangunterschiede erklären?</div></div> ‹button class="btn" id="again">Test wiederholen</button» ;
-document.getElementByld("again"). onclick=start;
+
+function result() {
+  const topics = {};
+  Q.forEach((d, j) => {
+    if (!topics[d.t]) topics[d.t] = { r: 0, n: 0 };
+    topics[d.t].n++;
+    if (ans[j] === d.a) topics[d.t].r++;
+  });
+  const tot = ans.filter((a, j) => a === Q[j].a).length;
+  const p = tot / Q.length;
+  const verdict = p >= 0.85 
+    ? ["Du bist fit für die Klausur!", "Halte dein Wissen mit ein paar Aufgaben aus dem Lehrbuch frisch."]
+    : p >= 0.6 
+    ? ["Du bist auf einem guten Weg.", "Schau dir die gelb und rot markierten Themen noch einmal gezielt an."]
+    : ["Es gibt noch Lücken, aber noch ist Zeit.", "Arbeite die rot markierten Themen mit Heft und Lehrbuch auf und mache den Test danach erneut."];
+
+  let rows = "";
+  for (const [n, t] of Object.entries(topics)) {
+    const q = t.r / t.n;
+    const c = q === 1 ? "g" : q >= 0.5 ? "y" : "r";
+    const label = q === 1 ? "sicher" : q >= 0.5 ? "wackelig" : "Lücke";
+    rows += `<div class="row"><b>${n}</b><span class="pill ${c}">${t.r}/${t.n} &bull; ${label}</span></div>${q < 1 ? `<div class="tip">${TIPS[n]}</div>` : ""}`;
+  }
+
+  app.innerHTML = `
+    <h1>Deine Auswertung</h1>
+    <div class="bar"><i style="width: 100%"></i></div>
+    <div class="card">
+      <div class="tag">Gesamtergebnis</div>
+      <div class="q" style="font-size:1.2rem;margin:6px 0;"><b>${tot} von ${Q.length}</b> richtig (${Math.round(p * 100)} %)</div>
+      <div><b>${verdict[0]}</b><br>${verdict[1]}</div>
+    </div>
+    <div class="card">
+      <div class="tag">Nach Themen</div>
+      ${rows}
+    </div>
+    <div class="card">
+      <div class="tag">Selbstcheck: Kann ich ...</div>
+      <div class="fb">&bull; eine Schwingung mit y(t), T, f und &omega; beschreiben?<br>&bull; T für Feder- und Fadenpendel berechnen und begründen?<br>&bull; Energieumwandlungen im Schwingungsverlauf erklären?<br>&bull; Resonanz mit Eigen- und Erregerfrequenz erklären?<br>&bull; mit c = &lambda;&middot;f rechnen und Wellenarten unterscheiden?<br>&bull; Interferenz und stehende Wellen über Gangunterschiede erklären?</div>
+    </div>
+    <button class="btn" id="again">Test wiederholen</button>
+  `;
+  document.getElementById("again").onclick = start;
+}
+
 start();
-</script> </body> </html>
+</script>
+</body>
+</html>
